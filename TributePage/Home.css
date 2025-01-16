@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Poppins:ital,wght@0,100;0,200;1,100;1,200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Poppins";
+}
+.header{
+    background-color: white;
+    color:black;
+    text-align: center;
+    padding: 1rem;
+}
+.header .name{
+    color: #7e594d;
+}
+.header h1{
+    margin-bottom: 15px;
+}
+.header nav a{
+    color: #7e594d;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.header nav a:hover{
+    color: black;
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    background-image: url('./assests/bg.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    padding: 1rem;
+    padding-left: 100px;
+    color: white;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-image {
+    flex: 1;
+    position: relative;
+    z-index: 2;
+    
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    
+}
+
+.hero-text {
+    flex: 1;
+    position: relative;
+    z-index: 2;
+    max-width: 50%;
+    color: white;
+}
+
+.hero-text h1 {
+    color: #97775d;
+    font-size: 2rem;
+}
+
+.hero-text p {
+    font-size: 1rem;
+}
+
+.hero-text button {
+    background-color: #97775d;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.hero-text button:hover {
+    background-color: #004d40;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .hero-text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .hero-image img {
+        max-width: 100%;
+    }
+}
+
+
+
+
+.bio-section {
+    background-image: url('./assests/bg4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 3rem 1rem;
+    text-align: center;
+    position: relative;
+}
+
+.bio-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.bio-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+    color: black;
+}
+
+.bio-title {
+    color: #7e594d;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.bio-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-weight: bold
+}
+
+
+
+
+.ach-sec {
+    background-image: url('./assests/bg5.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 4rem 2rem;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+}
+
+.ach-sec::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.ach-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.ach-title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #FFD700;
+}
+
+.ach-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+.mov{
+    color: #FFD700;
+}
+
+
+
+.foot-sec {
+    background-color: white;
+    color: #7e594d;
+    text-align: center;
+    padding: 1.5rem 2rem;
+}
+
+.foot-sec p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    font-weight: bold;
+}
